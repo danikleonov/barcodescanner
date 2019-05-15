@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddToDBActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dbSaveCode"
+        android:text="dbSaveCode"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dbSaveType"
+        android:text="dbSaveType"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_below="@+id/dbSaveCode"/>
+
+    <EditText
+        android:id="@+id/dbSaveClass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:hint="Введите классификатор"
+        android:layout_below="@+id/dbSaveType"/>
+
+
+    <EditText
+        android:id="@+id/dbSaveDescr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:hint="Введите описание"
+        android:layout_below="@+id/dbSaveClass"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dbSaveInfo"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/dbSaveDescr"
+        android:text="Сохранить информацию о коде"/>
+
+</RelativeLayout>
